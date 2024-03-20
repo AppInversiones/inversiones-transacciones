@@ -26,7 +26,7 @@ public class TransactionServiceImp implements TransactionService {
                 .collect(Collectors.toList());
 
         if (transactionEntities.isEmpty()) {
-            transactionResponseDTO.setMessage("No hay billeteras creadas.");
+            transactionResponseDTO.setMessage("No hay transacciones registradas.");
             transactionResponseDTO.setCode(1);
             return transactionResponseDTO;
         }
